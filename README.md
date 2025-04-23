@@ -14,7 +14,7 @@ WireFrame:![wireframe](https://github.com/user-attachments/assets/ff6e81fc-17a0-
 Lenguaje: HTML y CSS
 ### Installing
 
- Utilice Visual studio code como editor, el cual lo descargue del siguiente link: https://code.visualstudio.com/download
+ Utilice Visual studio code como editor, se puede descargar del siguiente link: https://code.visualstudio.com/download
  
 
 ### Executing program
