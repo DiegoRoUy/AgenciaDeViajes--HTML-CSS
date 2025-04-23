@@ -3,7 +3,8 @@ Obligatorio Diseño de intefaz web
 
 ## Description
 
-A partir del wireframe presentado por la docente tuve que realizar un sitio onepage de una Agencia de viaje sin el uso de frameworks ni ser responsive.![wireframe](https://github.com/user-attachments/assets/ff6e81fc-17a0-4100-9436-572ad325aba8)
+A partir del wireframe presentado por la docente tuve que realizar un sitio onepage de una Agencia de viaje sin el uso de frameworks ni ser responsive.
+WireFrame:![wireframe](https://github.com/user-attachments/assets/ff6e81fc-17a0-4100-9436-572ad325aba8)
 
 
 ## Getting Started
