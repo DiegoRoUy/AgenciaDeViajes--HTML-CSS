@@ -1,0 +1,509 @@
+:root {
+    --blanco: #fff;
+    --azulOscuro: #4983B2;
+    --azulClaro: #5b9ff8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    /* Es el desplazamiento al hacer clic en un a href */
+}
+
+body {
+    /* Formato de la letra  */
+    font-family: "Afacad Flux", sans-serif;
+    font-weight: 500;
+}
+
+.contenedores {
+    width: 1280px;
+    margin: auto;
+    padding-top: 60px;
+}
+
+.flex {
+    display: flex;
+}
+
+/* Tipografia */
+
+h1 {
+    font-size: 50px;
+}
+
+.letraChica {
+    font-size: 10px;
+}
+
+.contenedores h1 {
+    /* Para los H1 que son de color blanco */
+    color: var(--blanco);
+}
+
+h2.color {
+    /* para los h2 de color azul claro */
+    color: var(--azulClaro);
+}
+
+ul.color {
+    color: var(--azulOscuro);
+}
+
+a.boton1 {
+    padding: 7px;
+    font-size: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+a.colorBlanco {
+    color: var(--azulOscuro);
+    background-color: var(--blanco);
+}
+
+a.colorAzul {
+    color: var(--blanco);
+    background-color: var(--azulClaro);
+}
+
+
+/*----------Inicio Header----------*/
+header {
+    display: flex;
+}
+
+header img {
+    margin-left: 25px;
+}
+
+header nav {
+    width: 100%;
+    margin: 5px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header a {
+    width: 100px;
+    margin-right: 5px;
+    padding: 5px;
+    color: var(--blanco);
+    background-color: var(--azulOscuro);
+    border-radius: 25px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 1s, width 0.5s;
+
+}
+
+header nav a:hover {
+    width: 150px;
+    color: var(--azulOscuro);
+    background-color: var(--blanco);
+    border-top: 2px solid var(--azulOscuro);
+}
+
+/*----------Fin Header----------*/
+
+
+/*----------Inicio Section fondo----------*/
+#fondo {
+    height: 500px;
+    padding: 20px;
+    background-image: url(Img/fondo.jpg );
+    background-attachment: fixed;
+    /* para que haga el efecto que se mueve */
+    background-size: cover;
+    /* para que no se repita la imagen */
+    background-position: center;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#fondo div {
+    color: var(--blanco);
+    flex-direction: column;
+    align-items: center;
+}
+
+#fondo p {
+    color: var(--blanco);
+    margin: 25px;
+    font-size: 30px;
+}
+
+#fondo a {
+    color: Var(--blanco);
+    background-color: var(--azulOscuro);
+}
+
+#fondo a:hover {
+    color: var(--blanco);
+    background-color: var(--azulClaro);
+}
+
+/*----------Fin section Fondo----------*/
+
+
+
+/*----------Inicio section destinos----------*/
+#destinos {
+    height: 700px;
+    flex-direction: column;
+    align-items: center;
+}
+
+#destinos h1 {
+    color: var(--azulOscuro);
+
+}
+
+#destinos h2 {
+    margin: 5px;
+    color: var(--azulClaro);
+}
+
+#destinos img {
+    border-top: 6px solid var(--azulOscuro);
+    border-bottom: 6px solid var(--azulClaro);
+}
+
+#divArticulos {
+    margin-top: 15px;
+}
+
+#divArticulos article {
+    width: 24%;
+    height: 450px;
+    margin: 10px;
+    border: 2px solid var(--azulOscuro);
+    border-radius: 5px;
+}
+
+#divArticulos article p {
+    margin: 5px;
+    color: var(--azulOscuro);
+}
+
+#divArticulos article:hover {
+    height: 450px;
+    margin-top: 20px;
+    border-color: var(--azulClaro);
+    cursor: pointer;
+    transition: background-color 1s, margin 0.5s;
+}
+
+#divArticulos article img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/*----------Fin section destinos---------- */
+
+
+
+/*----------Inicio section paquetes----------*/
+#paquetes {
+    padding-bottom: 50px;
+    background-color: var(--azulOscuro);
+}
+
+#paquetes p {
+    font-size: 30px;
+    color: var(--blanco);
+}
+
+#paquetes article p.precio {
+    font-size: 20px;
+    color: var(--azulOscuro);
+    text-align: end;
+}
+
+#paquetes img {
+    object-fit: cover;
+    object-position: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px
+}
+
+.grid p {
+    grid-column: span 4;
+}
+
+.grid article {
+    background-color: var(--blanco);
+}
+
+.grid article:nth-of-type(1) {
+    grid-column: span 3;
+}
+
+.grid article:nth-of-type(3) {
+    height: 200px;
+    grid-column: span 4;
+    flex-direction: row-reverse;
+    gap: 17px;
+}
+
+/* ------------Buzios-------------- */
+#articleBuzios h2 {
+    margin: 0px 15px;
+}
+
+#articleBuzios p {
+    margin: 0px 20px 5px;
+}
+
+#articleBuzios ul {
+    margin: 0px 20px 0 34px;
+}
+
+#articleBuzios img {
+    width: 100%;
+}
+
+
+/* ------------ Grecia ------------------ */
+#articleGrecia h2 {
+    margin-left: 10px;
+}
+
+#articleGrecia p {
+    margin-right: 25px;
+}
+
+#articleGrecia div {
+    margin-top: 20px;
+}
+
+#articleGrecia div ul {
+    margin: 16px 27px;
+}
+
+#articleGrecia img {
+    width: 65%;
+}
+
+
+/* ------------- España------------------ */
+
+#articleEspaña div {
+    margin: 5px 190px 0px 5px;
+}
+
+#articleEspaña div ul li {
+    margin-left: 20px;
+}
+
+#articleEspaña img {
+    width: 24%;
+}
+
+
+/*----------Fin section paquetes---------- */
+
+/*----------Inicio section reservas----------*/
+
+#reservas {
+    height: 600px;
+    background-color: azure;
+}
+
+.gridCont3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*------Inicio formulario------- */
+#reservas h1,
+p,
+form {
+    color: var(--azulOscuro);
+}
+
+form {
+    width: 600px;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.inputText,
+.inputDate {
+    width: 100%;
+    padding: 5px;
+}
+
+label {
+    margin-left: 2px;
+}
+
+.base {
+    margin-right: 30px;
+}
+
+form input[type="radio"] {
+    width: 30px;
+}
+
+form input[type="submit"] {
+    width: 90px;
+}
+
+form textarea {
+    width: 100%;
+    height: 80px;
+    resize: none;
+}
+
+.gridCont3 div:nth-child(5) {
+    grid-column: span 2;
+}
+
+.gridCont3 div:nth-child(6) {
+    grid-column: span 2;
+}
+
+.gridCont3 div:nth-child(7) {
+    grid-column: 2;
+    justify-self: end;
+}
+
+.gridCont3 div:nth-child(8) {
+    grid-column: 2;
+    justify-self: end;
+}
+
+#btnEnviar {
+    padding: 7px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+#btnEnviar:hover {
+    padding: 7px;
+    font-size: 15px;
+    color: var(--blanco);
+    background-color: var(--azulClaro);
+    border-radius: 5px;
+
+}
+
+/*------Fin Fomurlario------- */
+
+/*---------Inicio Tabla-------- */
+table {
+    width: 500px;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+th,
+td {
+    padding: 15px;
+    text-align: left;
+}
+
+table th:first-child {
+    width: 200px;
+}
+
+tbody tr:nth-child(even) {
+    color: var(--azulOscuro);
+    background-color: var(--blanco);
+}
+
+tbody tr:nth-child(odd) {
+    color: var(--blanco);
+    background-color: var(--azulClaro);
+}
+
+tbody tr:hover {
+    color: var(--blanco);
+    background-color: var(--azulOscuro);
+    transition: background-color 0.5s;
+    cursor: pointer;
+}
+
+tr:first-of-type {
+    color: var(--blanco);
+    background-color: var(--azulOscuro);
+}
+
+
+/*--------Fin Tabla---------*/
+/*----------Fin section reservas---------- */
+
+/*----------Inicio section destacado----------*/
+
+#destacado {
+    background-color: var(--azulOscuro);
+}
+
+#destacado p {
+    width: 600px;
+    margin-bottom: 20px;
+    color: var(--blanco);
+}
+
+#destacado a {
+    margin-right: 20px;
+    padding: 5px;
+}
+
+#destacado a:hover {
+    margin-right: 18px;
+    padding: 6px;
+}
+
+#destacado article {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#destacado article img {
+    width: 400px;
+    height: 400px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 60px;
+    object-fit: cover;
+}
+
+
+/*----------Fin section destacado---------- */
+
+/*----------Inicio Footer----------*/
+footer {
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    align-items: flex-end;
+}
+
+footer div {
+    width: 350px;
+    gap: 40px;
+}
+
+footer div img {
+    width: 60px;
+    padding: 10px;
+}
+
+
+/*----------Fin Footer----------*/
