@@ -8,7 +8,9 @@ A partir del wireframe presentado por la docente tuve que realizar un sitio onep
 
 
 
-WireFrame:![wireframe](https://github.com/user-attachments/assets/ff6e81fc-17a0-4100-9436-572ad325aba8)
+WireFrame:
+
+![wireframe](https://github.com/user-attachments/assets/ff6e81fc-17a0-4100-9436-572ad325aba8)
 
 
 ## Getting Started
